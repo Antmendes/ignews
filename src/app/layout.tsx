@@ -1,3 +1,4 @@
+import '../app/styles/global.scss'
 
 import { Inter } from 'next/font/google'
 
