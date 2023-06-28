@@ -14,7 +14,7 @@
    nav {
     margin-left: 5rem;
     height: 5rem;
-   }
+   
 
    a {
     display: inline-block;
@@ -50,5 +50,10 @@
         background: var(--yellow-500);
 
     }
+}
+   }
+
+   button {
+    margin-left: auto;
    }
 }
