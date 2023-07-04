@@ -1,7 +1,17 @@
+
+
+
 import { Header } from "./components/Header/page";
+import Provider from "./components/Provider/provider";
+
+
+
 import { SubscribeButton } from "./components/SubscribeButton/page";
 import styles from './home.module.scss'
 import { stripe } from "./services/stripe";
+
+
+export const revalidate = 60 * 60 * 24 // atualiza a requisiçao a cada 24 horas
 
 
 export default async function Home() {
@@ -19,9 +29,10 @@ export default async function Home() {
 
   
   return (
-    <>
+    <Provider>
+    
     <Header />
-
+    
     <main className={styles.contentContainer}>
       <section className={styles.hero}>
         <span>👏 Hey, welcome</span>
@@ -35,6 +46,7 @@ export default async function Home() {
 
       <img src="/images/Mulher.png" alt="Girl coding" />
     </main>
-    </>
+    
+    </Provider>
   )
 }
