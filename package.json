@@ -14,6 +14,7 @@
     "@types/react-dom": "18.2.6",
     "eslint": "8.43.0",
     "eslint-config-next": "13.4.7",
+    "faunadb": "^4.8.0",
     "next": "13.4.7",
     "next-auth": "^4.22.1",
     "node-sass": "^9.0.0",

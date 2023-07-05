@@ -15,7 +15,7 @@ export const revalidate = 60 * 60 * 24 // atualiza a requisiçao a cada 24 horas
 
 
 export default async function Home() {
-  const stripe = require('stripe') ('sk_test_51NO61TGl9kA9zGAJkKmHT02iyawXlmoNzXMmhiJIabxmivd1ty6VMShdfstfFApGDLAjmrpqD0ldovSTRFoChHo100LuXnA9lM')
+  const stripe = require('stripe') (process.env.STRIPE_API_KEY)
 
   const price = await stripe.prices.retrieve('price_1NO6FgGl9kA9zGAJPLMmJ15W' )
 
